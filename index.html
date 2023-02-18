@@ -8,11 +8,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="icon" href="./image/icon.png">
-</head>
 
 <body>
     <style>
-        /* reser css */
         body {
             margin: 0;
             padding: 0;
@@ -20,139 +18,230 @@
         }
 
         .wrap {
-            float: center;
-            justify-content: space-between;
-            margin: 0px auto;
+
+            margin: 0 auto;
             width: 80%;
+            justify-content: space-between;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        #header {
+        .header {
+            float: left;
+            width: 100%;
+            background-color: rgb(250, 240, 231);
+            border-bottom: 20px solid rgb(248, 210, 183);
+        }
+        .hd1 {
+            float: left;
+            width: 30%;
             text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-            background-image: url(./image/themes.jpg);
         }
 
-
-        .nav {
-            width: 40%;
+        .hd2 {
             float: left;
+            width: 55%;
             margin-left: 25px;
-            margin-right: 25px;
-            border-right: 2px solid rgb(51, 131, 168);
-            font-family: Arial, Helvetica, sans-serif;
         }
 
-        .content {
-            width: 48%;
+        .sec1 {
             float: left;
-            margin-left: 25px;
-            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 15px;margin-right: 15px;
+            width: 60%;
+        }
+        .sec2 {
+            float: left;
+            margin-left: 15px;
+            width: 35%;
+        }
+        #avatar{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #title {
+            text-align: left;
+            border-bottom: 5px solid rgb(248, 210, 183);
+            width: fit-content;
+            font-size: larger;
+            color: rgb(247, 114, 20);
+        }
+
+        #nd {
+            margin-left: 15px;
+            color: rgb(32, 20, 92);
+            font-size: medium;
+        }
+
+        #nd_cv {
+            margin-left: 35px;
+            font-size: medium;
+            border-left: 2px solid rgb(247, 114, 20);
+        }
+
+        #nd_cv1 {
+            color: rgb(247, 114, 20);
+        }
+
+        #nd_cv2 {
+            color: rgb(32, 20, 92);
+            text-align: justify;
         }
     </style>
-
 </body>
 </head>
 
 <body>
     <div class="wrap">
-        <div id="header"> <!-- cái này là phần đầu CV -->
-            <p style="font-size: x-large;">
-                <img src="./image/CV.png" style="width: 150px;height: 150px;" ; alt="PHAN THỊ CẨM VÂN">
-                <br><b>PHAN THỊ CẨM VÂN</b>
-            </p>
-            <p style="font-size: larger;">
-                <b>Học viên Rikkei Academy Khoá tháng 2</b>
-            </p>
-            <audio controls>
-            <source src="./image/Shin.mp3" type="audio/mpeg">
-            </audio>
-        </div>
-
-        <div class="main">
-            <div class="nav"> <!-- Cái này chứa thông tin cá nhân -->
-                <p style="font-size: larger; color: rgb(57,131,164);">
-                    <b>THÔNG TIN CÁ NHÂN</b>
+        <div class="header">
+            <div class="hd1">
+                <img id="avatar" src="./image/shin_img.jpg" alt="SHIN-CHAN">
+            </div>
+            <div class="hd2">
+                <p style="font-size: xx-large;color: rgb(247, 114, 20);">
+                    <b>SHIN-CHAN</b>
                 </p>
-
-                <p style="font-size: medium;margin-left: 15px;">
-                    <i class="material-icons" style="color: rgb(32,20,92);">email</i> &emsp;phantcvan@gmail.com
-                    <br>
-                    <i class="material-icons" style="color: rgb(32,20,92);">date_range</i> &emsp;29/12/1988
-                    <br>
-                    <i class="material-icons" style="color: rgb(32,20,92);">location_on</i> &emsp;Hoàng Mai, Hà Nội
-                    <br>
-                    <i class="material-icons" style="color: rgb(32,20,92);">call</i> &emsp;012345678
+                <p style="font-size: larger; color: rgb(32, 20, 92)">
+                    <i><b>Nhân viên chăm sóc khách hàng</b></i>
                 </p>
-                <br><br>
-                <p style="font-size: larger; color: rgb(57,131,164);">
-                    <b>HỌC VẤN</b>
-                </p>
-
-                <p style="font-size: medium;margin-left: 15px;">
-                    <b>Đại học sư phạm Hà Nội | Chuyên ngành Tiếng Nhật</b>
-                </p>
-                <p style="font-size: medium;margin-left: 25px;color: grey;">
-                    <i> 2006-2010</i>
-                </p>
-                <ul>
-                    <li>GPA: 3.9/4.0</li>
-                    <li>JLPT N2</li>
-                    <li>TOEIC 700</li>
-                    <li>Chủ tịch Hội Sinh viên năm học 2008-2009</li>
-                </ul>
-                </p>
-                <p style="font-size: medium;margin-left: 15px;">
-                    <b>Rikkei Academy | Fullstack</b>
-                </p>
-                <p style="font-size: medium;margin-left: 25px;color: grey;">
-                    <i> 2/2023-9/2023</i>
+                <p style="color: rgb(32, 20, 92)">
+                    <i class="material-icons" style="color: rgb(32,20,92);">location_on</i>&ensp;Hoàng Mai, Hà Nội<br>
+                    <i class="material-icons" style="color: rgb(32,20,92);">date_range</i>&ensp;19/1/1992<br>
+                    <i class="material-icons" style="color: rgb(32,20,92);">phone</i>&ensp;012345678<br>
+                    <i class="material-icons" style="color: rgb(32,20,92);">email</i>&ensp;shin_chan@gmail.com<br>
                 </p>
             </div>
-            <div class="content"> <!-- Cái này chứa kinh nghiệm lv-->
-                <p style="font-size: larger; color: rgb(57,131,164);">
-                    <b>KINH NGHIỆM LÀM VIỆC</b>
+        </div>
+        <div class="sec1">
+            <p id="title">
+                <b>HỌC VẤN</b>
+            </p>
+            <p style="font-size: medium;color: rgb(247, 114, 20);">
+                <b><i>10/2017&nbsp;&rarr;&nbsp;05/2021</i></b>
+            </p>
+            <p id="nd">
+                <i class="material-icons" style="color: rgb(247, 114, 20);">add_circle</i>
+                <b>TRƯỜNG ĐẠI HỌC THĂNG LONG</b>
+            </p>
+            <div id="nd_cv">
+                <p id="nd_cv1" style="margin-left: 8px;margin-right: 8px;">
+                    Chuyên ngành: Quản trị Kinh doanh
                 </p>
-                <p style="font-size: medium;margin-left: 15px;">
-                    <b>Giáo viên Tiếng Nhật | Công ty CP TMDV Bảo Việt</b>
+                <p id="nd_cv2" style="margin-left: 8px;margin-right: 8px;">
+                    GPA: 3.2/4
                 </p>
-                <p style="font-size: medium;margin-left: 25px;color: grey;">
-                    <i> 2011-2014</i>
-                </p>
-                <p style="font-size: medium;margin-left: 15px;width: 100%;">
-                    <b>Du học sinh | 専門学校松山ビジネスカレッジ クリエイティブ校</b>
-                </p>
-                <p style="font-size: medium;margin-left: 25px;color: grey;">
-                    <i> 2014-2018</i>
-                </p>
-                <p style="font-size: medium;margin-left: 15px;">
-                    <b>Giáo viên Tiếng Nhật | Công ty CP TMDV Minh Thanh</b>
-                </p>
-                <p style="font-size: medium;margin-left: 25px;color: grey;">
-                    <i> 2018-2023</i>
-                </p>
-                <br><br>
-                <p style="font-size: larger; color: rgb(57,131,164);">
-                    <b>KỸ NĂNG</b>
-                </p>
-                <ul>
-                    <li>Tin học văn phòng</li>
-                    <li>Tiếng Anh cơ bản</li>
-                    <li>Tiếng Nhật giao tiếp</li>
-                    <li>Làm việc nhóm</li>
-                    <li>Giải quyết vấn đề</li>
-                </ul>
             </div>
-            <video width="640" height="480" controls>
-            <source src="./image/Shin.mp4">
-            
-            </video>
+            <p id="title">
+                <b>KINH NGHIỆM LÀM VIỆC</b>
+            </p>
+            <p style="font-size: medium;color: rgb(247, 114, 20);">
+                <b><i>7/2019&nbsp;&rarr;&nbsp;Hiện tại</i></b>
+            </p>
+            <p id="nd">
+                <i class="material-icons" style="color: rgb(247, 114, 20);">add_circle</i>
+                <b>CÔNG TY CỔ PHẦN RIKKEI VIỆT NAM</b>
+            </p>
+            <div id="nd_cv">
+                <p id="nd_cv1" style="margin-left: 8px;margin-right: 8px;">
+                    &ensp;Nhân viên chăm sóc khách hàng <br>
+                </p>
+                <p id="nd_cv2" style="margin-left: 8px;margin-right: 8px;">
+                    &ensp;- Lên kế hoạch chăm sóc khách hàng (data khách hàng có sẵn) <br>
+                    &ensp;- Tư vấn, hướng dẫn, giải đáp thắc mắc của khách hàng về sản phẩm, dịch vụ của công ty, báo
+                    giá dịch vụ và chốt đơn hàng với khách hàng <br>
+                    &ensp;- Kiểm tra, đôn đốc, phối hợp với các phòng ban để thực hiện đơn hàng đúng tiến độ, thời hạn
+                    đã cam kết với khách hàng <br>
+                    &ensp;- Thực hiện các công việc theo sự phân công của quản lý và cấp trên
+                </p>
+            </div>
+            <p id="title">
+                <b>HOẠT ĐỘNG</b>
+            </p>
+            <p style="font-size: medium;color: rgb(247, 114, 20);">
+                <b><i>10/2015&nbsp;&rarr;&nbsp;06/2019</i></b>
+            </p>
+            <p id="nd">
+                <i class="material-icons" style="color: rgb(247, 114, 20);">add_circle</i>
+                <b>CLB KINH DOANH QUỐC TẾ - TRƯỜNG ĐẠI HỌC THĂNG LONG</b>
+            </p>
+            <div id="nd_cv">
+                <p id="nd_cv1" style="margin-left: 8px;margin-right: 8px;">
+                    Thành viên
+                </p>
+                <p id="nd_cv2" style="margin-left: 8px;margin-right: 8px;">
+                    &ensp;- Chia sẻ kiến thức chuyên ngành <br>
+                    &ensp;- Chia sẻ các cơ hội thực tập tại các doanh nghiệp có nhu cầu tuyển dụng các vị trí liên quan
+                </p>
+            </div>
+            <p id="title">
+                <b>CHỨNG CHỈ</b>
+            </p>
+            <p style="font-size: medium;color: rgb(247, 114, 20);">
+                <b><i>2018</i></b>
+            </p>
+            <p id="nd">
+                <i class="material-icons" style="color: rgb(247, 114, 20);">add_circle</i>
+                <b>TOEIC: 700</b><br>
+                <i class="material-icons" style="color: rgb(247, 114, 20);">add_circle</i>
+                <b>JLPT: N2</b>
+            </p>
+            <p id="title">
+                <b>GIẢI THƯỞNG</b>
+            </p>
+            <p style="font-size: medium;color: rgb(247, 114, 20);">
+                <b><i>2018</i></b>
+            </p>
+            <p id="nd">
+                <i class="material-icons" style="color: rgb(247, 114, 20);">add_circle</i>
+                <b>TOP 10 NHÂN VIÊN CHĂM SÓC KHÁCH HÀNG XUẤT SẮC NĂM 2020 CỦA RIKKEI</b>
+            </p>
+            <div id="nd_cv">
+                <p id="nd_cv1" style="margin-left: 8px;margin-right: 8px;">
+                    Thành viên
+                </p>
+                <p id="nd_cv2" style="margin-left: 8px;margin-right: 8px;">
+                    &ensp;- Chia sẻ kiến thức chuyên ngành <br>
+                    &ensp;- Chia sẻ các cơ hội thực tập tại các doanh nghiệp có nhu cầu tuyển dụng các vị trí liên quan
+                </p>
+            </div>
+        </div>
+        <div class="sec2">
+            <p id="title">
+                <b>MỤC TIÊU NGHỀ NGHIỆP</b>
+            </p>
+            <p id="nd_cv2" style="margin-left: 8px;margin-right: 8px;">
+                &ensp;- Trở thành nhân viên chăm sóc khách hàng cao cấp cho các doanh nghiệp <br>
+                &ensp;- Học tập, rèn luyện, nâng cao năng lực chuyên môn để trở thành Trưởng phòng Kinh doanh chuyên
+                nghiệp trong vòng 5 năm tới
+            </p>
+            <p id="title">
+                <b>THÔNG TIN THÊM</b>
+            </p>
+            <p id="nd_cv2" style="margin-left: 8px;margin-right: 8px;">
+                Có thể đi làm ngay
+            </p>
+            <p id="title">
+                <b>KỸ NĂNG</b>
+            </p>
+            <p id="nd_cv2" style="margin-left: 8px;margin-right: 8px;">
+                &ensp;- Tin học văn phòng <br>
+                &ensp;- Tiếng Nhật giao tiếp <br>
+                &ensp;- Tiếng Anh cơ bản <br>
+                &ensp;- Làm việc nhóm <br>
+                &ensp;- Giải quyết vấn đề <br>
+            </p>
+            <p id="title">
+                <b>SỞ THÍCH</b>
+            </p>
+            <p id="nd_cv2" style="margin-left: 8px;margin-right: 8px;">
+                &ensp;- Du lịch <br>
+                &ensp;- Đọc sách <br>
+                &ensp;- Gặp mặt bạn bè <br>
+            </p>
         </div>
     </div>
-
-
-
-    </div>
-
 </body>
 
 </html>
