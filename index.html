@@ -16,7 +16,6 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         .wrap {
 
             margin: 0 auto;
@@ -51,7 +50,7 @@
         .sec2 {
             float: left;
             margin-left: 15px;
-            width: 35%;
+            width: 28%;
         }
         #avatar{
             width: 200px;
@@ -79,15 +78,25 @@
             margin-left: 35px;
             font-size: medium;
             border-left: 2px solid rgb(247, 114, 20);
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         #nd_cv1 {
             color: rgb(247, 114, 20);
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         #nd_cv2 {
             color: rgb(32, 20, 92);
             text-align: justify;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #dg{
+            color: rgb(247, 114, 20);
+            font-size: small;
+            margin-left: 15px;
         }
     </style>
 </body>
@@ -106,12 +115,20 @@
                 <p style="font-size: larger; color: rgb(32, 20, 92)">
                     <i><b>Nhân viên chăm sóc khách hàng</b></i>
                 </p>
-                <p style="color: rgb(32, 20, 92)">
-                    <i class="material-icons" style="color: rgb(32,20,92);">location_on</i>&ensp;Hoàng Mai, Hà Nội<br>
-                    <i class="material-icons" style="color: rgb(32,20,92);">date_range</i>&ensp;19/1/1992<br>
-                    <i class="material-icons" style="color: rgb(32,20,92);">phone</i>&ensp;012345678<br>
-                    <i class="material-icons" style="color: rgb(32,20,92);">email</i>&ensp;shin_chan@gmail.com<br>
-                </p>
+                <table style="color: rgb(32, 20, 92);margin-left: 15px;">
+                    <tr>
+                        <td style="width: 50%;"><i class="material-icons" style="color: rgb(32,20,92);">date_range</i>&ensp;19/1/1992</td>
+                        <td style="width: 50%;"><i class="material-icons" style="color: rgb(32,20,92);">man</i>&ensp;Nam</td>
+                    </tr>
+                    <tr>
+                        <td><i class="material-icons" style="color: rgb(32,20,92);">phone</i>&ensp;012345678</td>
+                        <td><i class="material-icons" style="color: rgb(32,20,92);">location_on</i>&ensp;Hoàng Mai, Hà Nội</td>
+                    </tr>
+                    <tr>
+                        <td><i class="material-icons" style="color: rgb(32,20,92);">email</i>&ensp;shin_chan@gmail.com</td>
+                        <td><audio src="./image/audio.mp3" controls></audio></td>
+                    </tr>
+                </table>
             </div>
         </div>
         <div class="sec1">
@@ -141,7 +158,7 @@
             </p>
             <p id="nd">
                 <i class="material-icons" style="color: rgb(247, 114, 20);">add_circle</i>
-                <b>CÔNG TY CỔ PHẦN RIKKEI VIỆT NAM</b>
+                <b>CÔNG TY CỔ PHẦN ABC VIỆT NAM</b>
             </p>
             <div id="nd_cv">
                 <p id="nd_cv1" style="margin-left: 8px;margin-right: 8px;">
@@ -195,7 +212,8 @@
             </p>
             <p id="nd">
                 <i class="material-icons" style="color: rgb(247, 114, 20);">add_circle</i>
-                <b>TOP 10 NHÂN VIÊN CHĂM SÓC KHÁCH HÀNG XUẤT SẮC NĂM 2020 CỦA RIKKEI</b>
+                <b>TOP 10 NHÂN VIÊN CHĂM SÓC KHÁCH HÀNG XUẤT SẮC NĂM 2020 CỦA ABC</b><br><br>
+                <iframe width="642" height="361" src="https://www.youtube-nocookie.com/embed/eBVqcTEC3zQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </p>
             </div>
         </div>
@@ -218,11 +236,53 @@
                 <b>KỸ NĂNG</b>
             </p>
             <p id="nd_cv2" style="margin-left: 8px;margin-right: 8px;">
-                &ensp;- Tin học văn phòng <br>
-                &ensp;- Tiếng Nhật giao tiếp <br>
-                &ensp;- Tiếng Anh cơ bản <br>
-                &ensp;- Làm việc nhóm <br>
-                &ensp;- Giải quyết vấn đề <br>
+                <table id="nd_cv2">
+                    <tr>
+                        <td>&ensp;- Tin học văn phòng</td>
+                        <td><i class="material-icons" id="dg">brightness_1</i>
+                            <i class="material-icons" id="dg">brightness_1</i>
+                            <i class="material-icons" id="dg">brightness_1</i>
+                            <i class="material-icons" id="dg">panorama_fish_eye</i>
+                            <i class="material-icons" id="dg">panorama_fish_eye</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&ensp;- Tiếng Nhật giao tiếp </td>
+                        <td><i class="material-icons" id="dg">brightness_1</i>
+                            <i class="material-icons" id="dg">brightness_1</i>
+                            <i class="material-icons" id="dg">brightness_1</i>
+                            <i class="material-icons" id="dg">brightness_1</i>
+                            <i class="material-icons" id="dg">panorama_fish_eye</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&ensp;- Tiếng Anh cơ bản</td>
+                        <td><i class="material-icons" id="dg">brightness_1</i>
+                            <i class="material-icons" id="dg">brightness_1</i>
+                            <i class="material-icons" id="dg">brightness_1</i>
+                            <i class="material-icons" id="dg">panorama_fish_eye</i>
+                            <i class="material-icons" id="dg">panorama_fish_eye</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&ensp;- Làm việc nhóm </td>
+                        <td><i class="material-icons" id="dg">brightness_1</i>
+                            <i class="material-icons" id="dg">brightness_1</i>
+                            <i class="material-icons" id="dg">brightness_1</i>
+                            <i class="material-icons" id="dg">brightness_1</i>
+                            <i class="material-icons" id="dg">panorama_fish_eye</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&ensp;- Giải quyết vấn đề</td>
+                        <td><i class="material-icons" id="dg">brightness_1</i>
+                            <i class="material-icons" id="dg">brightness_1</i>
+                            <i class="material-icons" id="dg">brightness_1</i>
+                            <i class="material-icons" id="dg">brightness_1</i>
+                            <i class="material-icons" id="dg">panorama_fish_eye</i>
+                        </td>
+                    </tr>
+                </table>
             </p>
             <p id="title">
                 <b>SỞ THÍCH</b>
